@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Приглашение на День Рождения</title>
+    <meta name="description" content="Приглашаем вас отпраздновать этот особенный вечер вместе с нами.">
+
+    <!-- ========================================== -->
+    <!-- SOCIAL PREVIEW (og:image лежит в assets/preview.jpg) -->
+    <!-- ========================================== -->
+    <meta property="og:title" content="Приглашение на День Рождения">
+    <meta property="og:description" content="Приглашаем вас отпраздновать этот особенный вечер вместе с нами.">
+    <meta property="og:image" content="assets/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Приглашение на День Рождения">
+    <meta name="twitter:description" content="Приглашаем вас отпраздновать этот особенный вечер вместе с нами.">
+    <meta name="twitter:image" content="assets/preview.jpg">
+
+    <link rel="icon" href="data:,">
+
+    <!-- Google Fonts (с фолбэком на системные шрифты, см. style.css) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&family=Jost:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================== -->
+    <!-- PRELOADER -->
+    <!-- ========================================== -->
+    <div id="preloader" aria-hidden="true">
+        <div class="preloader-num" id="preloader-num">50</div>
+        <div class="preloader-line"></div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- CUSTOM CURSOR (только desktop) -->
+    <!-- ========================================== -->
+    <div id="cursor-dot"></div>
+
+    <!-- ========================================== -->
+    <!-- INTRO SCREEN -->
+    <!-- ========================================== -->
+    <section id="intro">
+        <div class="intro-frame">
+            <span class="corner corner-tl"></span>
+            <span class="corner corner-tr"></span>
+            <span class="corner corner-bl"></span>
+            <span class="corner corner-br"></span>
+        </div>
+
+        <div class="intro-deco intro-deco--left">
+            <span class="line line--vert"></span>
+            <span class="badge" id="intro-date-badge">28.09.2026</span>
+        </div>
+        <div class="intro-deco intro-deco--right">
+            <span class="sticker star" aria-hidden="true"></span>
+        </div>
+
+        <div class="intro-content">
+            <p class="intro-eyebrow">персональное приглашение</p>
+            <h1 class="intro-title">ВЫ ПРИГЛАШЕНЫ</h1>
+            <p class="intro-sub" id="intro-sub">на день рождения</p>
+            <button class="btn-open" id="btn-open" type="button">
+                <span class="btn-open-text">ОТКРЫТЬ</span>
+                <span class="btn-open-circle"></span>
+            </button>
+        </div>
+
+        <div class="intro-footer">
+            <span class="intro-footer-line"></span>
+            <span class="intro-footer-text">нажмите, чтобы продолжить</span>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- MUSIC TOGGLE -->
+    <!-- ========================================== -->
+    <button id="music-toggle" type="button" aria-label="Включить музыку">
+        <span class="music-icon">♫</span>
+        <span class="music-label" id="music-label">ВЫКЛ</span>
+    </button>
+
+    <!-- ========================================== -->
+    <!-- FLOATING NAV -->
+    <!-- ========================================== -->
+    <!-- <nav id="float-nav" aria-label="Навигация">
+        <button data-target="invite" class="nav-btn">ДЕТАЛИ</button>
+        <span class="nav-sep"></span>
+        <button data-target="countdown" class="nav-btn">ТАЙМЕР</button>
+    </nav> -->
+
+    <!-- ========================================== -->
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <!-- ========================================== -->
+    <main id="content">
+
+        <!-- ===== HERO ===== -->
+        <section class="section hero" id="hero">
+            <div class="hero-topline reveal" data-reveal>
+                <span>ДЕНЬ РОЖДЕНИЯ · ПРИГЛАШЕНИЕ</span>
+                <span id="hero-date-code">28.09.2026</span>
+            </div>
+
+            <div class="hero-main">
+                <h2 class="hero-title reveal" data-reveal>
+                    <span id="hero-name-text">ЮРА</span><span class="hero-name-dot">.</span>
+                </h2>
+                <div class="hero-age reveal" data-reveal data-reveal-delay="1" id="hero-age">21</div>
+            </div>
+
+            <p class="hero-name reveal" data-reveal data-reveal-delay="2">
+                <span class="hero-title-line">ДЕНЬ РОЖДЕНИЯ</span>
+            </p>
+
+            <span class="sticker sparkle hero-sparkle" aria-hidden="true"></span>
+            <span class="line line--horiz hero-line" aria-hidden="true"></span>
+
+            <div class="hero-vertical-text" aria-hidden="true">
+                <span>· ПРАЗДНИК · ТОРЖЕСТВО · С ЛЮБОВЬЮ · ДЕНЬ РОЖДЕНИЯ ·</span>
+            </div>
+        </section>
+
+        <!-- ===== ПРИГЛАШЕНИЕ / ДЕТАЛИ ===== -->
+        <section class="section invite" id="invite">
+            <span class="badge badge--num reveal" data-reveal>01</span>
+
+            <p class="invite-lead reveal" data-reveal>Приглашаем вас на</p>
+            <h3 class="invite-heading reveal" data-reveal>День Рождения</h3>
+
+            <p class="invite-text reveal" data-reveal data-reveal-delay="1" id="invite-text">
+                Будем рады разделить этот вечер вместе с вами и отпраздновать этот день в хорошей компании.
+            </p>
+
+            <div class="chips reveal" data-reveal data-reveal-delay="2" id="highlight-chips" aria-hidden="true">
+                <!-- заполняется через script.js из invitation.highlights -->
+            </div>
+
+            <div class="details-grid">
+                <div class="details-row reveal" data-reveal data-reveal-delay="1">
+                    <span class="details-label">ИМЕНИННИК</span>
+                    <span class="details-value" id="detail-name">ЮРА</span>
+                </div>
+                <div class="details-row reveal" data-reveal data-reveal-delay="2">
+                    <span class="details-label">КОГДА</span>
+                    <span class="details-value">
+                        <span id="detail-date">28 СЕНТЯБРЯ</span><br>
+                        <span class="details-value--sub" id="detail-time">19:00</span>
+                    </span>
+                </div>
+                <div class="details-row reveal" data-reveal data-reveal-delay="3">
+                    <span class="details-label">ГДЕ</span>
+                    <span class="details-value">
+                        <span id="detail-location">НАЗВАНИЕ МЕСТА</span><br>
+                        <span class="details-value--sub" id="detail-address">АДРЕС</span>
+                    </span>
+                </div>
+                <div class="details-row reveal" data-reveal data-reveal-delay="4">
+                    <span class="details-label">ДРЕСС-КОД</span>
+                    <span class="details-value details-value--small" id="detail-dresscode">Чёрно-белый</span>
+                </div>
+            </div>
+
+            <a href="#" id="map-link" class="btn-map reveal" data-reveal data-reveal-delay="4" target="_blank"
+                rel="noopener noreferrer">
+                <span>ОТКРЫТЬ НА КАРТЕ</span>
+                <span class="btn-map-arrow">→</span>
+            </a>
+
+        </section>
+
+        <!-- ===== COUNTDOWN ===== -->
+        <section class="section countdown-section" id="countdown">
+            <span class="badge reveal" data-reveal>02</span>
+            <h3 class="section-title reveal" data-reveal>ДО ПРАЗДНИКА ОСТАЛОСЬ</h3>
+
+            <div class="countdown" id="countdown-timer">
+                <div class="countdown-item">
+                    <span class="countdown-num" id="cd-days">00</span>
+                    <span class="countdown-label">ДНЕЙ</span>
+                </div>
+                <span class="countdown-colon">·</span>
+                <div class="countdown-item">
+                    <span class="countdown-num" id="cd-hours">00</span>
+                    <span class="countdown-label">ЧАСОВ</span>
+                </div>
+                <span class="countdown-colon">·</span>
+                <div class="countdown-item">
+                    <span class="countdown-num" id="cd-minutes">00</span>
+                    <span class="countdown-label">МИНУТ</span>
+                </div>
+                <span class="countdown-colon">·</span>
+                <div class="countdown-item">
+                    <span class="countdown-num" id="cd-seconds">00</span>
+                    <span class="countdown-label">СЕКУНД</span>
+                </div>
+            </div>
+
+            <p class="countdown-message" id="countdown-message" hidden></p>
+            <span class="star star--outline countdown-star" aria-hidden="true"></span>
+        </section>
+
+    </main>
+
+    <!-- Фоновая музыка: если assets/music.mp3 отсутствует, кнопка просто не будет работать -->
+    <audio id="bg-music" loop preload="none">
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
