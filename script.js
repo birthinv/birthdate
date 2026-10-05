@@ -23,7 +23,7 @@ const invitation = {
     dateShort: "ЮБИЛЕЙ!",
 
     // Время начала (человекочитаемое, для текста на странице)
-    time: "20:30",
+    time: "15:00",
 
     // Место проведения
     location: "La Primo",
@@ -32,7 +32,10 @@ const invitation = {
     address: "Актау, 7-й микрорайон, 45",
 
     // Дресс-код (строка "ДРЕСС-КОД" в блоке деталей)
-    dressCode: "ЧЁРНО-БЕЛЫЙ",
+    dressCode: "Чёрное, белое или их идеальное сочетание",
+
+    // Пояснение под дресс-кодом (можно оставить пустым "")
+    dressCodeNote: "а если такой возможности нет — любой цвет, в котором вам хорошо",
 
     // Короткие теги-подсказки о вечере (можно добавить/убрать/поменять сколько угодно)
     highlights: ["УЖИН", "ТОСТЫ", "ТАНЦЫ", "КАРАОКЕ"],
@@ -40,7 +43,7 @@ const invitation = {
     // ТОЧНАЯ дата и время события в формате ISO — используется для countdown.
     // Формат: "ГГГГ-ММ-ДДTЧЧ:ММ:00". Часовой пояс — локальный пояс браузера гостя.
     // ВАЖНО: замени на реальную дату своего праздника.
-    eventDateISO: "2026-10-10T20:30:00",
+    eventDateISO: "2026-10-10T15:00:00",
 
     // Текст приглашения (можно менять свободно)
     invitationText:
@@ -96,6 +99,7 @@ function applyInvitationData() {
     setText("detail-location", invitation.location);
     setText("detail-address", invitation.address);
     setText("detail-dresscode", invitation.dressCode);
+    setText("detail-dresscode-note", invitation.dressCodeNote || "");
 
     // Теги-подсказки о вечере
     const chipsWrap = document.getElementById("highlight-chips");

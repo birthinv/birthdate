@@ -893,6 +893,119 @@ main#content.is-visible {
     }
 }
 
+
+/* =====================================================================
+   STORY / ТЕМА ВЕЧЕРИНКИ «ЧЁРНО-БЕЛОЕ»
+   ===================================================================== */
+.story {
+    padding-top: 40px;
+}
+
+.story-lead {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(22px, 5.4vw, 34px);
+    line-height: 1.35;
+    color: var(--ink);
+    max-width: 24ch;
+    margin-bottom: 28px;
+}
+
+.story-lead em {
+    font-style: normal;
+    border-bottom: 2px solid var(--ink);
+}
+
+.story-text {
+    font-size: clamp(15px, 2.6vw, 18px);
+    color: var(--ink-soft);
+    line-height: 1.7;
+    max-width: 46ch;
+    margin-bottom: 8px;
+}
+
+.story-number {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(110px, 32vw, 220px);
+    line-height: 0.9;
+    color: var(--ink);
+    margin: 4px 0 32px;
+}
+
+.story-number span {
+    color: var(--muted-2);
+}
+
+.story-theme {
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: clamp(36px, 10vw, 68px);
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    margin: 14px 0 36px;
+    border: 2px solid var(--ink);
+}
+
+.story-theme-black,
+.story-theme-white {
+    padding: 0.16em 0.28em 0.2em;
+}
+
+.story-theme-black {
+    background: var(--paper);
+    color: var(--ink);
+}
+
+.story-theme-white {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.story-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--ink);
+}
+
+.story-half {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 26px 20px 28px;
+}
+
+.story-half--white {
+    background: var(--paper);
+    color: var(--ink);
+}
+
+.story-half--black {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.story-half-label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.story-half-text {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(18px, 4.4vw, 26px);
+    line-height: 1.25;
+}
+
+@media (max-width: 420px) {
+    .story-split {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* =====================================================================
    INVITE / ДЕТАЛИ
    ===================================================================== */
